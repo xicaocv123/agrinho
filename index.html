@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conexão Campo-Cidade</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f3f3f3;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #228B22, #32CD32);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      animation: slideDown 1s ease-in-out;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    nav a:hover {
+      background: #666;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') center/cover no-repeat;
+      height: 300px;
+      position: relative;
+      animation: zoomIn 2s ease;
+    }
+    .hero h2 {
+      position: absolute;
+      bottom: 1rem;
+      left: 2rem;
+      color: white;
+      background: rgba(0,0,0,0.5);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background: #228B22;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 1rem;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes slideDown {
+      from {transform: translateY(-50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+    @keyframes zoomIn {
+      from {transform: scale(1.1); opacity: 0;}
+      to {transform: scale(1); opacity: 1;}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-leaf"></i> Conexão Campo-Cidade</h1>
+    <p>Unindo saberes, culturas e tecnologias para um futuro sustentável</p>
+  </header>
+
+  <nav>
+    <a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a>
+    <a href="#tecnologia"><i class="fas fa-cogs"></i> Tecnologia</a>
+    <a href="#mapa"><i class="fas fa-map"></i> Mapa</a>
+    <a href="#contato"><i class="fas fa-envelope"></i> Contato</a>
+  </nav>
+
+  <div class="hero">
+    <h2><i class="fas fa-seedling"></i> Valorizando o campo, integrando com a cidade</h2>
+  </div>
+
+  <section id="sobre">
+    <h2><i class="fas fa-seedling"></i> Sobre o Projeto</h2>
+    <p>O projeto "Conexão Campo-Cidade" visa fortalecer os laços entre áreas urbanas e rurais por meio de práticas sustentáveis, tecnologia e valorização cultural. A proposta é promover o entendimento mútuo e criar pontes entre os modos de vida, mostrando como a tecnologia pode beneficiar tanto o campo quanto a cidade.</p>
+  </section>
+
+  <section id="tecnologia">
+    <h2><i class="fas fa-tractor"></i> Tecnologias no Campo</h2>
+    <div class="grid">
+      <div class="card">
+        <h3><i class="fas fa-satellite"></i> Internet das Coisas (IoT)</h3>
+        <p>Uso de sensores para monitoramento climático, irrigação e solo, conectando o campo em tempo real com técnicos urbanos.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-drone"></i> Agricultura de Precisão</h3>
+        <p>Aplicação de drones, GPS e dados geoespaciais para melhorar a produtividade e reduzir o impacto ambiental.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-mobile-alt"></i> Aplicativos Educativos</h3>
+        <p>Uso de apps para capacitação de jovens rurais e promoção da cultura local nas escolas urbanas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mapa">
+    <h2><i class="fas fa-map-marked-alt"></i> Mapa da Conexão</h2>
+    <p>Confira as regiões conectadas pelo nosso projeto:</p>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1zNYIrfSgL3UwH3vPvA2L7ABgQ98&hl=pt-BR"></iframe>
+  </section>
+
+  <section id="contato">
+    <h2><i class="fas fa-comments"></i> Fale Conosco</h2>
+    <p>Quer participar ou saber mais? Envie uma mensagem para: <strong>conexaocampocidade@email.com</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Conexão Campo-Cidade | Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
